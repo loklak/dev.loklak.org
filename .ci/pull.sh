@@ -15,6 +15,7 @@ fi
 
 # Parse file
 while read prefix repo branch; do
+    echo "Pulling $prefix ..."
     git subtree pull --prefix=$prefix $repo $branch --squash \
         -m "Update $prefix subtree"
 done < $CONFIG
