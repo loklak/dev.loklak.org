@@ -1,0 +1,10 @@
+This folder contains various indicies from various documentation site.
+Indicies are responsible to generate TOC so they have to be in rST format.
+
+Please make sure the filenames are in this format:
+<PRIORITY>_<REPOSITORY_NAME>_<CONTENT>.rst
+
+PRIORITY should be a two digit number, like 01, 02, 03, etc.
+CONTENT should describe the content of the file, like "readme", "toc", etc.
+
+The indicies compiler compiles ascending based on the filename.
