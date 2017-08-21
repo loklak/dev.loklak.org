@@ -1,0 +1,30 @@
+metadata:
+  author: FOSSASIA
+  projectname: loklak
+  version: development
+  autoindex:
+    include: STARTPAGE.md
+    toc:
+      show: false
+    subproject:
+      show: false
+
+build:
+  source: .
+  logo: logo.svg
+  theme:
+    name: sphinx_fossasia_theme
+  subproject:
+    - url: https://github.com/loklak/loklak_server
+      source: docs
+    - url: https://github.com/fossasia/loklak_search
+      source: .
+    - url: https://github.com/fossasia/apps.loklak.org
+      source: docs
+    - url: https://github.com/fossasia/loklak_wok_android
+      source: docs
+    - url: https://github.com/loklak/loklak_wok_desktop
+      source: .
+  publish:
+    ghpages:
+      url: dev.loklak.org
